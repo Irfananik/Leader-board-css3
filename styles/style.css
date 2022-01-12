@@ -24,6 +24,65 @@ hr {
 /* common styles end*/
 
 
+/* header & navigation */
+
+header {
+    background-color: #562EFF;
+    padding: 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-left-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-lightbulb {
+    font-size: 42px;
+    color: #fff;
+}
+
+.nab-title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.nav-right-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manubar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.manubar-img img {
+    width: 51px;
+    height: 51px;
+}
+
+.manubar {
+    position: relative;
+    right: 30px;
+}
+
+.nav-title {
+    position: relative;
+    left: 15px;
+}
+
+
 /* top players style */
 
 .container {
@@ -180,6 +239,45 @@ hr {
 /* style for small device using media-query */
 
 @media only screen and (max-width: 688px) {
+    /* header & navigation */
+    header {
+        background-color: #562EFF;
+        padding: 16px;
+        width: 100%;
+    }
+    .nav-left-content {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icon,
+    .fa-lightbulb {
+        color: transparent;
+    }
+    .nav-title h1 {
+        color: transparent;
+    }
+    .nav-right {
+        position: relative;
+        right: 100px;
+        top: -70px;
+        padding-top: 6px;
+    }
+    .manubar {
+        padding-top: 5px;
+    }
+    .manubar-img {
+        position: absolute;
+        right: 46px;
+    }
+    .nav-right-content {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+    }
+    /* header & navigation end*/
     .container {
         width: 100%;
         background-color: transparent;
@@ -203,6 +301,10 @@ hr {
     img {
         align-items: center;
     }
+    .course {
+        position: relative;
+        left: 50px;
+    }
 }
 
 
@@ -216,5 +318,32 @@ hr {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
+    }
+    .container {
+        width: 100%;
+        background-color: transparent;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .players,
+    .blogs,
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+    }
+    .course {
+        position: relative;
+        left: 270px;
+    }
+    .blog,
+    img {
+        align-items: center;
     }
 }
