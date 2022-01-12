@@ -175,3 +175,43 @@ hr {
     height: 20.03px;
     background-color: #FF4A60;
 } */
+
+
+/* style for small device using media-query */
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .players,
+    .blogs,
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+    }
+    .latest-courses {}
+}
+
+
+/* for ipad */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
