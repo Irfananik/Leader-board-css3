@@ -182,7 +182,7 @@ hr {
 @media only screen and (max-width: 688px) {
     .container {
         width: 100%;
-        height: 100%;
+        background-color: transparent;
     }
     .section-title {
         text-align: center;
@@ -199,7 +199,10 @@ hr {
     .course {
         flex-direction: column;
     }
-    .latest-courses {}
+    .blog,
+    img {
+        align-items: center;
+    }
 }
 
 
